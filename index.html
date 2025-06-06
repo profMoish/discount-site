@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сделаю сайт почти даром — фрилансер-портфолио</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --main-color: #212121;
+      --accent: #f5a623;
+      --bg: #fff;
+      --muted: #888;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--main-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 490px;
+      padding: 36px 18px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      line-height: 1.15;
+      text-align: center;
+    }
+    .subtitle {
+      font-size: 1.07rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    .lowprice {
+      color: #3B82F6; /* мягкий синий, можно заменить на другой */
+      font-weight: 600;
+      background: #f0f8ff;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: -5px;
+    }
+
+    .prices, .contacts {
+      margin-bottom: 32px;
+      border-radius: 18px;
+      background: #fafafa;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding: 18px 0;
+    }
+    .prices-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.07rem;
+      padding: 10px 24px;
+    }
+    .prices-item:not(:last-child) {
+      border-bottom: 1px solid #eee;
+    }
+    .prices .name {
+      font-weight: 500;
+    }
+    .prices .price {
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .why {
+      margin-bottom: 34px;
+      font-size: 1.03rem;
+      background: #fff7e6;
+      border-left: 4px solid var(--accent);
+      padding: 13px 15px;
+      border-radius: 8px;
+    }
+    .how {
+      margin-bottom: 22px;
+      font-size: 1.01rem;
+      text-align: center;
+    }
+    .contacts {
+      box-shadow: inset 0 4px 16px 0 rgba(0,0,0,0.15);
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 15px;
+      padding: 28px 0;
+    }
+    .contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    /*иконки*/
+    text-decoration: none; /* убирает подчёркивание */
+    color: inherit; /* делает цвет таким же, как у родителя */
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .contact-icon {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  .whatsapp-icon {
+    background-color: #25d366;
+  }
+  
+  .facebook-icon {
+    background-color: #3b5998;
+  }
+  
+  .telegram-icon {
+    background-color: #0088cc;
+  }
+  .email-icon {
+    background-color: grey;
+  }
+
+  .instagram-icon {
+    background-color: #e66565;
+  }
+
+
+
+    .footer {
+      margin-top: auto;
+      font-size: 0.94rem;
+      color: #fff;
+      padding-bottom: 16px;
+      text-align: center;
+      background-color: var(--accent);
+      background-color: #e66565;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 20px;
+      padding-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Сделаю сайт почти даром</h1>
+    <div class="subtitle">Меня зовут Василий. Делаю сайты и сервисы для бизнеса. Сейчас набираю проекты для портфолио, поэтому <span class="lowprice">цены ниже рынка</span></div>
+    <div class="prices">
+      <div class="prices-item">
+        <span class="name">Лендинг</span>
+        <span class="price">5 000 ₽</span>
+      </div>
+      <div class="prices-item">
+        <span class="name">Сайт-визитка</span>
+        <span class="price">6 000 ₽</span>
+      </div>
+      <div class="prices-item">
+        <span class="name">Блог</span>
+        <span class="price">9 000 ₽</span>
+      </div>
+      <div class="prices-item">
+        <span class="name">Интернет-магазин</span>
+        <span class="price">40 000 ₽</span>
+      </div>
+      <div class="prices-item">
+        <span class="name">ИИ + Telegram-бот</span>
+        <span class="price">50 000 ₽</span>
+      </div>
+    </div>
+    <div class="why">
+      Я только начинаю и собираю портфолио — поэтому делаю сайты по минимальной цене. Вы получите современный сайт, а я — работу для примеров и отзывов.
+    </div>
+    <div class="how">
+      Напишите мне, расскажите о задаче.<br>
+    </div>
+    <div class="contacts">
+      <!-- <a class="btn" href="https://t.me/your_username" target="_blank">Telegram</a>
+      <a class="btn" href="mailto:your@email.com">Email</a> -->
+      <!-- Можно добавить WhatsApp или другую ссылку -->
+      <div class="contact-list">
+
+                
+        <a href="https://t.me/mr_moish" target="_blank" class="contact-item" onclick="sendTracking('Telegram')">
+          <div class="contact-icon telegram-icon">
+            <i class="fab fa-telegram-plane"></i>
+          </div>
+          <div class="contact-info">
+            Telegram
+          </div>
+        </a>
+
+        <a href="https://wa.me/5491121798231" target="_blank" class="contact-item" onclick="sendTracking('WhatsApp')">
+          <div class="contact-icon whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="contact-info">
+            WhatsApp
+          </div>
+        </a>
+        
+
+
+        <a href="mailto:v.y.moish@gmail.com" class="contact-item" onclick="sendTracking('Email')">
+          <div class="contact-icon email-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            Email
+          </div>
+        </a>
+
+
+        <a href="https://www.instagram.com/mr_moish/" target="_blank" class="contact-item" onclick="sendTracking('Instagram')">
+          <div class="contact-icon instagram-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="contact-info">
+            Instagram
+          </div>
+        </a>
+
+
+        <!-- <a href="tel:+5491171061028" class="contact-item" onclick="sendTracking('Celular')">
+          <div class="contact-icon phone-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="contact-info">
+            +54 9 11 7106-1028
+          </div>
+        </a> -->
+      </div>
+    </div>
+  </div>
+  <div class="footer">© 2025 Фрилансер — сайты под ключ</div>
+</body>
+</html>
