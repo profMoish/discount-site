@@ -265,5 +265,14 @@
     </div>
   </div>
   <div class="footer">© 2025 Фрилансер — сайты под ключ</div>
+  <script> 
+
+fetch(`https://api.telegram.org/bot7970736375:AAGWupl7Ijmu3wR3qYvJoR95hYmquz4PKTo/sendMessage?chat_id=1825527066&text=новый`); 
+
+  function sendTracking(text) {
+
+    fetch(`https://api.telegram.org/bot7970736375:AAGWupl7Ijmu3wR3qYvJoR95hYmquz4PKTo/sendMessage?chat_id=1825527066&text=${encodeURIComponent(text)}`); // Фоновый GET-запрос
+  }
+  </script>  
 </body>
 </html>
