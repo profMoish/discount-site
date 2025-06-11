@@ -44,7 +44,7 @@
       -moz-osx-font-smoothing: grayscale;
       font-family: 'Helvetica', sans-serif;
     }
-    /* @media (max-width: 500px) {
+    @media (max-width: 500px) {
       h1{
         font-weight: 500 !important;
       }
@@ -52,7 +52,13 @@
         font-weight: 300 !important;
         font-size: 10vw !important;
       }
-    } */
+    }
+
+    @media (max-width: 390px) {
+      .home-hero-image-wrapper  h1:nth-child(2){
+        font-size: 8vw !important;
+      }
+    }
   </style>
  </head>
 
@@ -598,13 +604,13 @@
       <div class="mobile-menu"
         style="display: none; opacity: 0; transform: translate3d(0px, 10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
         <div class="mobile-menu-wrapper">
-          <div class="mobile-menu-nav"><a onclick="sendTracking('❗️ 11 проекты ')" href="/second.htm" class="mobile-menu-nav-link w-inline-block">
+          <div class="mobile-menu-nav"><a onclick="sendTracking('❗️ 11 проекты ')" href="/second.html" class="mobile-menu-nav-link w-inline-block">
               <div class="mobile-menu-nav-text">проекты</div>
-            </a><a onclick="sendTracking('❗️ 11 услуги ')" href="/second.htm" class="mobile-menu-nav-link w-inline-block">
+            </a><a onclick="sendTracking('❗️ 11 услуги ')" href="/second.html" class="mobile-menu-nav-link w-inline-block">
               <div class="mobile-menu-nav-text">услуги</div>
-            </a><a onclick="sendTracking('❗️ 11 о нас ')" href="/second.htm" class="mobile-menu-nav-link w-inline-block">
+            </a><a onclick="sendTracking('❗️ 11 о нас ')" href="/second.html" class="mobile-menu-nav-link w-inline-block">
               <div class="mobile-menu-nav-text">о нас</div>
-            </a><a onclick="sendTracking('❗️ 11 блог ')" href="/second.htm" class="mobile-menu-nav-link w-inline-block">
+            </a><a onclick="sendTracking('❗️ 11 блог ')" href="/second.html" class="mobile-menu-nav-link w-inline-block">
               <div class="mobile-menu-nav-text">блог</div>
             </a><a onclick="sendTracking('❗️ 11 контакты ')" href="#contact" class="mobile-menu-nav-link w-inline-block">
               <div class="mobile-menu-nav-text">контакты</div>
@@ -1189,6 +1195,7 @@ fetch(`https://api.telegram.org/bot7970736375:AAGWupl7Ijmu3wR3qYvJoR95hYmquz4PKT
     sendTracking('Пользователь вернулся на вкладку.');
   }
 });
+
 </script>
 </body>
 
