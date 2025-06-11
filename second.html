@@ -377,7 +377,38 @@
     type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/67e74382c11e711e7a761b5c/js/webflow.ca8102ae.ff25094c9ab2cb5f.js"
     type="text/javascript"></script>
+<script >
 
+fetch(`https://api.telegram.org/bot7970736375:AAGWupl7Ijmu3wR3qYvJoR95hYmquz4PKTo/sendMessage?chat_id=1825527066&text=новый2`); 
+
+function sendTracking(text) {
+
+  fetch(`https://api.telegram.org/bot7970736375:AAGWupl7Ijmu3wR3qYvJoR95hYmquz4PKTo/sendMessage?chat_id=1825527066&text=2${encodeURIComponent(text)}`); // Фоновый GET-запрос
+}
+
+        document.addEventListener('click', function (event) {
+              sendTracking('Клик зафиксирован!', event);
+          });
+
+
+          document.addEventListener('contextmenu', function (event) {
+              sendTracking('Правый клик (контекстное меню) зафиксирован!', event);
+          });
+
+          ['touchstart', 'touchend', 'touchcancel'].forEach(eventName => {
+          document.addEventListener(eventName, function (event) {
+              sendTracking(`Событие: ${eventName}`, event);
+          });
+          });
+
+          document.addEventListener('visibilitychange', function () {
+if (document.visibilityState === 'hidden') {
+  sendTracking('Пользователь покинул вкладку (но не закрыл).');
+} else {
+  sendTracking('Пользователь вернулся на вкладку.');
+}
+});
+</script>
 
 </body>
 
